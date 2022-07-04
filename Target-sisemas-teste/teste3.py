@@ -9,13 +9,17 @@
 
 import json
 
-with open("dados.json") as f:
-   obj_pyhton = json.load(f)
+with open("dados.json", encoding='utf-8') as meu_json:
+   dados = json.load(meu_json)
 
-print(obj_pyhton[0]['dia'])
-print(obj_pyhton[0]['valor'])
+for i in dados:
+   x=i['valor']
 
-print(obj_pyhton[0].values())
+print("TOTAL: ",x)
+#   if x != 0:
+
+#      print(x)
+
 
 
 
